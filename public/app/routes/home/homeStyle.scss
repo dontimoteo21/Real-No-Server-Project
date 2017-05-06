@@ -4,24 +4,38 @@
     padding: 0;
 }
 
+body{
+    overflow-x: hidden;
+}
 
 .main-container{
 
     background-image: url("./app/images/star-wars-space-wallpaper-2.jpg");
     background-size: contain;
 }
+.home{
+    font-size: 25px;
+    color: ghostwhite;
+    padding: 6px;
+    &:hover{
+        transition: 0.5s ease;
+        transform: scale(1.1);
+        color: #dd6633;
+    }
+}
 
 .nav {
 
     background-color: #222;
-    width: 100%;
+    width: auto;
     height: 80px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     color: yellow;
     font-family: arial;
 }
+
 
 .outer-container {
     display: flex;
@@ -32,14 +46,19 @@
 .box {
     text-align: center;
     background: #888;
-    border: 1px solid yellow;
-    padding: 0px;
-    margin: 10px 10px;
+    border: 2px solid yellow;
+    padding: 0px 0px;
+    margin: 15px 5px;
     text-transform: capitalize;
     display:flex;
-    flex-direction:column;
+    flex-flow:column nowrap;
     justify-content: space-around;
     text-shadow: .8px .8px #888;
+    &:hover{
+        transition: 0.5s ease;
+        transform: scale(1.1);
+        border-color: #dd6633;
+    }
 }
 
 
@@ -96,23 +115,17 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+}
 
-}
-.image {
-  float: left;
-  width: 40%;
-  margin: 0 30px 20px 0;
-  
-  &:nth-child(2n) {
-    clear: left;
-  }
-  
-  &:nth-child(2n+1){
-    margin-right: 0;
-  }
-}
-.object-fit_contain { 
+.object-fit_contain {
+    -o-animation: b 
+    display: flex;
     object-fit: contain;
+    height: 300px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 70px;
+    
 }
 
 
