@@ -1,0 +1,10 @@
+<div class="planet-detail-container">
+<ul>
+    <li>name: {{planetDetail.name}}</li>
+    <li>climate: {{planetDetail.climate}}</li>
+    <li>terrain: {{planetDetail.terrain}}</li>
+    <li>population: {{planetDetail.population | number:0}}</li>
+</ul>
+</div>
+
+<img class="planet-life" ng-src="{{planetDetail.images.imageLife}}">

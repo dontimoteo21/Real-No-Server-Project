@@ -1,0 +1,33 @@
+<!--<div class="planet-card" ng-repeat="planet in data">
+    <img class="main-image" ng-src=""/>
+    <p ng-class="p-name">{{planet.name}}</p>
+    <p ng-class="p-climate">{{planet.climate}}</p> 
+    <p ng-class="p-terrain">{{planet.terrain}}</p>
+
+     <div>{{planet.climate}}</div>
+    <div>{{planet.terrain}}</div>
+</div>-->
+<!--
+<div class="image-container" ng-repeat="planet in planetImages">
+        <div class="img-responsive planet-images"><img ng-src="{{planet.image}}"></div>
+        </div>-->
+
+
+<div class="outer-container row">
+
+
+    <div ui-sref="planetDetails({name:planet.name})" class="col-md-5 box" ng-repeat="planet in data track by $index">
+        
+        <div class="image-container">
+            <img class="planet-img" ng-src="{{planetImages[$index].image}}">
+        </div>
+
+        <div class="caption">{{planet.name}}
+
+            
+
+      
+        </div>
+    </div>
+</div>
+
