@@ -13,11 +13,13 @@ body{
     background-image: url("./app/images/star-wars-space-wallpaper-2.jpg");
     background-size: contain;
 }
-.home{
+
+.home {
     font-size: 25px;
     color: ghostwhite;
     padding: 6px;
-    &:hover{
+    padding-right: 250px;
+    &:hover {
         transition: 0.5s ease;
         transform: scale(1.1);
         color: #dd6633;
@@ -25,15 +27,16 @@ body{
 }
 
 .nav {
-
     background-color: #222;
+    font-size: 30px;
+    padding-right: 300px;
     width: auto;
     height: 80px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     color: yellow;
-    font-family: arial;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif arial;
 }
 
 
@@ -118,7 +121,7 @@ body{
 }
 
 .object-fit_contain {
-    -o-animation: b 
+    
     display: flex;
     object-fit: contain;
     height: 300px;
